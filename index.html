@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text">Expense Tracker</h1>
+        <div class="balance">Balance: <span id="balance">$00.00</span></div>
+        <div class="add-transaction">
+            <h3>Add New Transaction</h3>
+            <label for="text">Text:</label>
+            <input type="text" id="text" placeholder="Enter text...">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount...">
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+        <div class="transaction-list">
+            <h3>Transaction History</h3>
+            <ul id="transactions">
+            </ul>
+            <button id="clear" onclick="clearHistory()">Clear History</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
